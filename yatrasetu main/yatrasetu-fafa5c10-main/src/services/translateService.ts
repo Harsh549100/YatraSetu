@@ -15,7 +15,7 @@ export interface TranslationOptions {
 }
 
 class TranslateService {
-  private groqApiKey = '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';
+ private groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
   private baseUrl = 'https://api.groq.com/openai/v1/chat/completions';
 
   // Enhanced mock translations for demo
