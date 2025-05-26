@@ -1,6 +1,9 @@
 
 const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY;
+console.log("GROQ Key:", GROQ_API_KEY); 
+
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+
 
 export interface ItineraryRequest {
   destination: string;
